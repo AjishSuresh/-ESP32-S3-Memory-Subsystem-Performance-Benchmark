@@ -45,7 +45,7 @@ Part 3 of the project "Optimizing Energy Consumption and Real-Time Performance i
    - Buffer writes in SRAM before committing to Flash/PSRAM to reduce wear and improve speed.
 
 ## 📂 Repository Structure
-- **`benchmark/`**: Custom benchmark code used for testing.
+- **`benchmark/`**: Custom benchmark code used for testing( https://github.com/AjishSuresh/-ESP32-S3-Memory-Subsystem-Performance-Benchmark.git)
 - **`results/`**: Raw data, tables, and graphs from the tests.
 - **`docs/`**: Detailed report and analysis (see `memory.pdf`).
 
