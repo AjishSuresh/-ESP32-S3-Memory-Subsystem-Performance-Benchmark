@@ -1,0 +1,30 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D F:\PROGRAM\ESP32\SINGLECORE\mem2\build\bootloader\esp-idf\esptool_py && C:\Users\Adhil\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/ESP_IDF/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 F:/PROGRAM/ESP32/SINGLECORE/mem2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5210 bytes. 0x2df0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mem.c.obj
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable mem2.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated F:/PROGRAM/ESP32/SINGLECORE/mem2/build/mem2.bin
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D F:\PROGRAM\ESP32\SINGLECORE\mem2\build\esp-idf\esptool_py && C:\Users\Adhil\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/ESP_IDF/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app F:/PROGRAM/ESP32/SINGLECORE/mem2/build/partition_table/partition-table.bin F:/PROGRAM/ESP32/SINGLECORE/mem2/build/mem2.bin"
+mem2.bin binary size 0x33470 bytes. Smallest app partition is 0x100000 bytes. 0xccb90 bytes (80%) free.
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D C:\ESP_IDF\v5.4\esp-idf\components\esptool_py && C:\Users\Adhil\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/ESP_IDF/v5.4/esp-idf -D SERIAL_TOOL=C:/Users/Adhil/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/ESP_IDF/v5.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=F:/PROGRAM/ESP32/SINGLECORE/mem2/build -P C:/ESP_IDF/v5.4/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM58 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mem2.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM58
+
+A fatal error occurred: Could not open COM58, the port is busy or doesn't exist.
+(could not open port 'COM58': PermissionError(13, 'Access is denied.', None, 5))
+
+Hint: Check if the port is not used by another task
+
+FAILED: CMakeFiles/flash F:/PROGRAM/ESP32/SINGLECORE/mem2/build/CMakeFiles/flash 
+C:\Windows\system32\cmd.exe /C "cd /D C:\ESP_IDF\v5.4\esp-idf\components\esptool_py && C:\Users\Adhil\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/ESP_IDF/v5.4/esp-idf -D SERIAL_TOOL=C:/Users/Adhil/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/ESP_IDF/v5.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=F:/PROGRAM/ESP32/SINGLECORE/mem2/build -P C:/ESP_IDF/v5.4/esp-idf/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.
