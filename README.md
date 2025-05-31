@@ -1,0 +1,2 @@
+# -ESP32-S3-Memory-Subsystem-Performance-Benchmark
+This repository contains benchmark results and analysis for the ESP32-S3 memory subsystem, focusing on sequential vs. random access performance, cache efficiency, and memory latency. The tests were conducted using a custom benchmark code under different configurations to evaluate the impact of CPU frequency scaling (DFS) and memory access patterns.
