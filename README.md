@@ -47,7 +47,7 @@ Part 3 of the project "Optimizing Energy Consumption and Real-Time Performance i
 ## 📂 Repository Structure
 - **`benchmark/`**: Custom benchmark code used for testing.
 - **`results/`**: Raw data, tables, and graphs from the tests.
-- **`docs/`**: Detailed report and analysis (see `4.2-memory.docx`).
+- **`docs/`**: Detailed report and analysis (see `memory.pdf`).
 
 🔧 **Contributions are welcome!** Feel free to open issues or submit pull requests for improvements or additional benchmarks.    
 ⭐ **If you find this useful, please star the repo!**
